@@ -1,6 +1,7 @@
 
 This is an image gallery iOS application.
 
+![Git URL](https://github.com/shubham2108/ImageGallery)
 
 ## Features
 
