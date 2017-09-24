@@ -1,0 +1,6 @@
+framework module Pods_ImageGalleryUITests {
+  umbrella header "Pods-ImageGalleryUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

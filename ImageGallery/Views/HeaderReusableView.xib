@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerView" id="U6b-Vx-4bR" customClass="HeaderReusableView" customModule="ImageGallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yub-89-7CJ">
+                    <rect key="frame" x="16" y="14" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Dal-Xp-S6J"/>
+                        <constraint firstAttribute="width" constant="40" id="yuq-91-Kud"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlw-3S-oeE">
+                    <rect key="frame" x="68" y="25" width="76.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Yub-89-7CJ" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="7AQ-tw-c5D"/>
+                <constraint firstItem="Yub-89-7CJ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leadingMargin" constant="8" id="b7G-j8-PE3"/>
+                <constraint firstItem="qlw-3S-oeE" firstAttribute="centerY" secondItem="Yub-89-7CJ" secondAttribute="centerY" id="i4K-HZ-5J1"/>
+                <constraint firstItem="qlw-3S-oeE" firstAttribute="leading" secondItem="Yub-89-7CJ" secondAttribute="trailing" constant="12" id="l2K-QB-9xZ"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="Yub-89-7CJ" id="d9F-RX-F6R"/>
+                <outlet property="nameLabel" destination="qlw-3S-oeE" id="VMS-Lm-wG1"/>
+            </connections>
+            <point key="canvasLocation" x="47" y="62.5"/>
+        </collectionReusableView>
+    </objects>
+</document>
